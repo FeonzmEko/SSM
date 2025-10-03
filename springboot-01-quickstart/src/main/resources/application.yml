@@ -1,0 +1,13 @@
+lesson: springboot
+
+server:
+  port: 81
+
+enterprise:
+  name: itcast
+  age: 16
+  tel: 1332233
+  subject:
+    - Java
+    - 前端
+    - 大数据

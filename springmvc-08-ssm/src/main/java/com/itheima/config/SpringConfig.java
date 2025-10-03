@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @ComponentScan({"com.itheima.service","com.itheima.dao"})
@@ -13,5 +15,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Import({JdbcConfig.class, MyBatisConfig.class})
 @MapperScan("com.itheima.dao")  // 添加这行
 @EnableTransactionManagement
-public class SpringConfig {
+public class SpringConfig implements WebMvcConfigurer {
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        WebMvcConfigurer.super.addResourceHandlers(registry);
+    }
 }

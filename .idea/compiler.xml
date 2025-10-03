@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-18-aop-quickstart" />
         <module name="springmvc-08-ssm" />
+        <module name="springboot-01-quickstart" />
         <module name="springmvc-01-quickstart" />
         <module name="spring-01-quickstart" />
       </profile>
@@ -16,5 +17,10 @@
       <module name="spring -20-aop-advice" target="17" />
       <module name="spring-18-aop-quickstart (1)" target="17" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-01-quickstart" options="-parameters" />
+    </option>
   </component>
 </project>

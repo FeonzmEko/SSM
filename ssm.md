@@ -208,3 +208,43 @@ public PlatformTransactionManager transactionManager(DataSource datasource){
 ## ssm整合
 
 ![image-20251002194508279](C:\Users\Qingfeng\AppData\Roaming\Typora\typora-user-images\image-20251002194508279.png)
+
+
+
+# SpringBoot
+
+## yml数据读取
+
+
+
+```yaml
+lesson: springboot
+
+server:
+  port: 81
+
+enterprise:
+  name: itcast
+  age: 16
+  tel: 1332233
+  subject:
+    - Java
+    - 前端
+    - 大数据
+```
+
+```java
+public class BookController {
+
+    @Autowired
+    private Environment environment;
+
+    @GetMapping("/{id}")
+    public String getById(@PathVariable Integer id){
+        System.out.println("id == >"+id);
+        System.out.println(environment);
+        return "hello,SpringBoot";
+    }
+}
+```
+
