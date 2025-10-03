@@ -6,10 +6,15 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring-01-quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-18-aop-quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-20-aop-advice-type/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-20-aop-advice/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-01-quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-08-ssm/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="ms-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
